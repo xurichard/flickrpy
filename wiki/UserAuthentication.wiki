@@ -199,7 +199,7 @@ We generate a string that looks something like this:
 An example of this string from the flickr user authentication documentation:
 `000005fab4534d05*api_key*9a0554259914a86fb9e7eb014e4e5d52*auth_token*45-76598454353455*method*flickr.photos.getSizes*photo_id*65641634653221`
 
-That may look a bit confusing, so I have put in *'s around each api argument name, though these must *not* be included in the md5 hash that is created later on.
+That may look a bit confusing, so I have put in asterisks around each api argument name, though these must *not* be included in the md5 hash that is created later on.
 
 Some Python code to generate that for you, assuming all the variables exist, is:
 
