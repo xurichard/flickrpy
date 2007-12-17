@@ -5,7 +5,7 @@
 
 In brackets is additional information about each item
 
-^ = [public only without authentication]
+^ = public only without authentication
 
 {{{
 TOOD list:
