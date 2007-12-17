@@ -3,30 +3,34 @@
 
 = List as of 2005/06/10 =
 
+In brackets is additional information about each item
+
+^ = [public only without authentication]
+
 {{{
 TOOD list:
 * flickr.blogs.*
-* flickr.contacts.getList
-* flickr.groups.browse
-* flickr.groups.getActiveList
-* flickr.people.getOnlineList
-* flickr.photos.getContactsPhotos
+* flickr.contacts.getList [requires authentication]
+* flickr.groups.browse ^
+* flickr.groups.getActiveList ^
+* flickr.people.getOnlineList ^
+* flickr.photos.getContactsPhotos [requires authentication]
 * flickr.photos.getContactsPublicPhotos
-* flickr.photos.getContext
-* flickr.photos.getCounts
-* flickr.photos.getExif
-* flickr.photos.getNotInSet
-* flickr.photos.getPerms
-* flickr.photos.getRecent
-* flickr.photos.getUntagged
-* flickr.photos.setDates
-* flickr.photos.setPerms
-* flickr.photos.licenses.*
-* flickr.photos.notes.*
-* flickr.photos.transform.*
-* flickr.photosets.getContext
-* flickr.photosets.orderSets
-* flickr.reflection.* (not important)
-* flickr.tags.getListPhoto
-* flickr.urls.*
+* flickr.photos.getContext ^
+* flickr.photos.getCounts ^
+* flickr.photos.getExif ^
+* flickr.photos.getNotInSet ^
+* flickr.photos.getPerms ^
+* flickr.photos.getRecent ^
+* flickr.photos.getUntagged ^
+* flickr.photos.setDates ^
+* flickr.photos.setPerms ^
+* flickr.photos.licenses.* ^
+* flickr.photos.notes.* ^
+* flickr.photos.transform.* ^
+* flickr.photosets.getContext ^
+* flickr.photosets.orderSets ^
+* flickr.reflection.* (not important) ^
+* flickr.tags.getListPhoto ^
+* flickr.urls.* ^
 }}}
