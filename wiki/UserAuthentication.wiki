@@ -13,7 +13,9 @@ Flickr has a page explaining [http://www.flickr.com/services/api/misc.userauth.h
 
 = Modifications to python.py =
 
-Currently, the user authentication methods/functions are not included with the flickr.py download, as they need a bit of cleaning up before they can be used, but they do work. Add the following to the bottom of the flickr.py document, before the line `if __name__ == '__main__':`.
+_*Notice:* These modifications are now included by default in flickr.py SVN revision 7. Please skip this section (though you can still read it to help understand the implementation)_
+
+~~Currently, the user authentication methods/functions are not included with the flickr.py download~~, as they need a bit of cleaning up before they can be used, but they do work. Add the following to the bottom of the flickr.py document, before the line `if __name__ == '__main__':`.
 
 {{{
 class Auth():
