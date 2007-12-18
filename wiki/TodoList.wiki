@@ -3,6 +3,45 @@
 
 For individual API functions/methods that I have implemented in Flickr.py, I will add documentation to an individual wiki page explaining how to use a number of them, as some may be slightly complicated to allow for maximum flexibility (not overly complicated, but may need a paragraph of explaining to understand how to use).
 
+== Automated Authentication ==
+
+With the new Flickr Authentication system, you need to generate a API Signature manually. An api signature is a combination of your secret key, all the methods and their values put together and hashed with a bit of md5. For more information, refer to the authentication documentation.
+
+Currently, because when I made the Authentication module, I didn't add automated support for this, you need to do it manually for each function you wish to call, which can take up a lot of time. Below is some code that I wrote to do this automatically. This would replace what is currently in the `if auth:` if statement in the function `_doget`. This is just copied and pasted from my "throw away" python file, which is where I test code. This could easily be implemented into the flickr.py script.
+
+{{{
+def _doget(method, auth=False, **params):  
+    if auth:
+        # Script has been edited to handle the new
+        # Flickr API Authentication System
+        url = ''
+        paramaters = ['API_KEY', 'method']
+
+        for item in params.items():
+            paramaters.append(item[0])
+
+        paramaters.sort()
+        print paramaters
+
+        api_string = API_SECRET
+        for item in paramaters:
+            for chocolate in params.items():
+                if item == chocolate[0]:
+                    api_string = api_string + item + chocolate[1]
+            if item == 'method':
+                api_string = api_string + 'method' + method
+            if item == 'API_KEY':
+                api_string = api_string + 'api_key' + API_KEY
+                    
+        print api_string
+
+method = 'flickr.test.method'
+API_KEY = 'myAPIKey'
+API_SECRET = 'itsAsecret!!!'
+
+_doget(method, auth=True, a='453534', c='34243', b='465254')
+}}}
+
 == flickr.blogs ==
 
 I am currently working on adding blogging API functionality to flickr.py (`flickr.blogs.*`). Retriving the list of blogs is near completion.
