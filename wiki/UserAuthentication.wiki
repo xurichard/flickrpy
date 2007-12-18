@@ -139,6 +139,8 @@ f.close()
 
 }}}
 
+_*Notice:* Flickr.py now adds a module to do this automatically. the module is `userToken()` (if calling from your program, `flickr.userToken()` will return the token), which can be called if you have it *setup correctly*. Examine the code for more information on setting it up correctly._
+
 This token will need to be used every time the program is opened. To read token.txt, use the following lines of code. The user will need to be in the same working directory. You will need to alter your program in a way so that it is a definite location or something that doesn't require the user to be in the same working directory if not needed, though that isn't relevant to this tutorial.
 
 {{{
@@ -147,8 +149,11 @@ token = f.read()
 f.close()
 }}}
 
+_*Notice:* The next 2 sections are obsolete, as the `_doget()` method/function now automatically creates an api_signature automatically. When calling `_doget()`, you will need to add `auth=True` to the call (example: `_doget(method, auth=True)`). The user must be already authenticated, as explained in the previous steps, and the `_doget()` function must be able to obtain token from the `userToken()` function (examine code for more information).
 
-= How To Call an API Method with Authentication =
+*It is still benificial to your understanding of the Flickr Authentication system to still read it*_
+
+= ~~How To Call an API Method with Authentication~~ =
 
 When calling an api method (such as flickr.photos.getSizes), you will need to add 2 other arguments to the call. The current arguments for flickr.photos.getSizes are `api_key`, `photo_id` and `method`, which is the actual name of the method (flickr.photos.getSizes). Lets take a look at the `getURL` function (which uses the api method flickr.photos.getSizes) within python.py to help explain this.
 
@@ -179,7 +184,7 @@ The third argument, api_key, is automatically handled by `_doget`, as the API_KE
 You can try to load that up in your browser if you wish, you just need to replace [your api key] with your api key (obviously), and [your photo id] with the ID of a PUBLIC photo (that URL does not yet contain the arguments needed to authenticate yet).
 
 
-== API Signature ==
+== ~~API Signature~~ ==
 
 The reason I explained the above was so you could understand how an API signature is made. I mentioned above that there are 2 other arguments to call to allow access to the account that is authenticated (for example, accessing photos set to private in that account). Those 2 arguments are `auth_token` and `api_sig`. `auth_token` is the token that was generated in a previous step (in the variable "token").
 
