@@ -3,6 +3,36 @@
 
 For individual API functions/methods that I have implemented in Flickr.py, I will add documentation to an individual wiki page explaining how to use a number of them, as some may be slightly complicated to allow for maximum flexibility (not overly complicated, but may need a paragraph of explaining to understand how to use).
 
+== TODO List ==
+
+Last updated Dec 19, 2007
+
+  * ~~flickr.blogs.getList~~
+  * flickr.blogs.postPhoto
+  * flickr.contacts.getList
+  * flickr.groups.browse
+  * flickr.groups.getActiveList
+  * flickr.people.getOnlineList
+  * flickr.photos.getContactsPhotos
+  * flickr.photos.getContactsPublicPhotos
+  * flickr.photos.getContext
+  * flickr.photos.getCounts
+  * flickr.photos.getExif
+  * flickr.photos.getNotInSet
+  * flickr.photos.getPerms
+  * flickr.photos.getRecent
+  * flickr.photos.getUntagged
+  * flickr.photos.setDates
+  * flickr.photos.setPerms
+  * flickr.photos.licenses.&#42;
+  * flickr.photos.notes.&#42;
+  * flickr.photos.transform.&#42;
+  * flickr.photosets.getContext
+  * flickr.photosets.orderSets
+  * flickr.reflection.&#42; (not important)
+  * flickr.tags.getListPhoto
+  * flickr.urls.&#42;
+
 == Automated Authentication ==
 
 With the new Flickr Authentication system, you need to generate a API Signature manually. An api signature is a combination of your secret key, all the methods and their values put together and hashed with a bit of md5. For more information, refer to the authentication documentation.
