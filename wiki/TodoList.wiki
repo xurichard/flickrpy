@@ -1,5 +1,5 @@
 #summary This is a cleaned up version of the "TODO List" included with Flickr.py
-#labels Incomplete,Phase-Requirements
+#labels Phase-Design,Phase-Requirements
 
 For individual API functions/methods that I have implemented in Flickr.py, I will add documentation to an individual wiki page explaining how to use a number of them, as some may be slightly complicated to allow for maximum flexibility (not overly complicated, but may need a paragraph of explaining to understand how to use).
 
@@ -32,6 +32,12 @@ Last updated Dec 19, 2007
   * flickr.reflection (not important)
   * flickr.tags.getListPhoto
   * ~~flickr.urls~~ (partial, in progress)
+
+== Flickr Upload ==
+
+An additional file, flickrUpload.py, is planned to be released as apart of flickr.py, which will allow programs to not only read and edit accounts, but upload to accounts if required.
+
+Currently, there is no release date planned.
 
 == Automated Authentication ==
 
