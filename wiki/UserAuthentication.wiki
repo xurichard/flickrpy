@@ -8,7 +8,7 @@ User authentication allows you to do things with users accounts, for example, ac
 
 = Reading Material =
 
-Flickr has a page explaining [http://www.flickr.com/services/api/misc.userauth.html user authentication]. I will help you if you read that page in full before continuing on this page.
+Flickr has a page explaining [http://www.flickr.com/services/api/misc.userauth.html user authentication]. It will help you if you read that page in full before continuing on this page.
 
 
 = Modifications to flickr.py =
